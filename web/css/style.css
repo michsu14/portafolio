@@ -1,0 +1,624 @@
+/* patrones globales del css */
+ 
+/* Tipografias de titulos, subtitulos, enlaces y botones: Domine */
+h1, h2, h3, h4, h5, h6, a, button {
+    font-family: 'Domine', serif;
+}
+
+
+/* Tipografias de parrafos: slabo 27px */
+p, span, strong, div, em {
+    font-family: 'Slabo 27px', serif;
+}
+
+/* quitar margen por defecto de body */
+body{
+    margin: 0 auto !important;
+    overflow-x: hidden !important;
+}
+
+/* quitar margen por defecto de titulos y parrafos */
+h1, h2, h3, h4, h5, h6, p, figure {
+    margin: 0;
+}
+
+/* confirmar display: block; a elementos de estructura HTML5 */
+aside, header, main, footer, section, article, figure, nav, figcaption {
+    display: block;
+}
+
+/* configuracion del estilo propio  */
+
+/* componente aside menu responsive */
+aside#menu-responsive{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 99998;
+    background: #e5165aeb;
+    display: none;
+    
+}
+aside#menu-responsive a#abrir{
+    width: 35px;
+    height: 35px;
+    display: none;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 15px;
+    right: 56px;
+    z-index: 1;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+
+}
+aside#menu-responsive a#abrir:hover{
+    color:#333333 ;
+    transition: all 0.3s ease-in;
+
+
+}
+aside#menu-responsive a#cerrar{
+    width: 35px;
+    height: 35px;
+    display: none;
+    margin: 0;
+    float: none;
+    position: absolute;
+    top: 15px;
+    right: 56px;
+    z-index: 2;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+
+}
+aside#menu-responsive a#cerrar:hover{
+    color:#333333 ;
+    transition: all 0.3s ease-in;
+
+}
+aside#menu-responsive nav#menu{
+
+}
+aside#menu-responsive nav#menu a{
+
+}
+aside#menu-responsive nav#menu a:hover{
+
+}
+aside#menu-responsive nav#redes-sociales{
+
+} 
+aside#menu-responsive nav#redes-sociales a{
+
+}
+aside#menu-responsive nav#redes-sociales{
+
+} a:hover{
+
+}
+
+/* componente aside boton WhatsApp */
+aside#boton-wp{
+    width: 50px;
+    height: 50px;
+    margin: 0 ;
+    float: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99996;
+    
+
+
+}
+aside#boton-wp a{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    font-size: 1.50em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #28eb32;
+    text-decoration: none;
+    padding: 12.5px 0;
+    letter-spacing: 0.03em;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgb(0 0 0 / 48%);
+    transition: all 0.3s ease-in;
+    
+
+}
+aside#boton-wp a:hover{
+    color: #000;
+    background: #FFFFFF;
+    transition: all 0.3s ease-in;
+
+}
+
+/* componente header */
+header{
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #333333;
+    z-index: 99997;
+
+}
+header article{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+
+}
+header article figure{
+    width: 56px;
+    height: 50px;
+    display: block;
+    margin: 10px 190px 10px 0;
+    float: left;
+    position: relative;
+
+}
+header article figure a{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+
+}
+header article figure a img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+
+}
+header article figure a:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
+
+}
+header article nav#menu{
+    width: 528px;
+    height: 35px;
+    display: block;
+    margin: 22px 0;
+    float: left;
+    position: relative;
+
+}
+header article nav#menu a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 10px;
+    float: left;
+    position: relative;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+    border-bottom: solid 4px #333333;
+
+}
+header article nav#menu a:hover{
+    color: #FFFFFF;
+    border-bottom: solid 4px #FFFFFF;
+    transition: all 0.3s ease-in;
+
+}
+header article nav#menu a i{
+margin: 0 8px;
+
+}
+header article nav#menu a.activo{
+    color: #FFFFFF;
+    transition: all 0.3s ease-in;
+    background-color: #E5165A;
+    border-radius: 5px;
+
+}
+header article nav#menu nav#submenu{
+    display: none;
+
+}
+header article nav#menu nav#submenu a{
+
+}
+header article nav#menu nav#submenu a:hover{
+
+}
+header article nav#redes-sociales{
+    width: 134px;
+    height: 35px;
+    display: block;
+    margin: 22px 0;
+    float: right;
+    position: relative;
+
+}
+header article nav#redes-sociales a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 8px;
+    float: left;
+    position: relative;
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+    border-bottom: solid 4px #333333;
+
+}
+header article nav#redes-sociales a:hover{
+    color: #E5165A;
+    transition: all 0.3s ease-in;
+
+}
+ 
+/* caja main  */
+main{
+    width: 100%;
+    height: auto;
+    margin: 80px auto 0 auto;
+    float: none;
+    position: relative;
+
+}
+main section#banner-slides{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #fda2b5;
+
+}
+
+main section#banner-slides article.slick-slider{
+    width: 100%;
+    height: 88vh;
+    margin: 0 auto;
+    float: none;
+    position: relative;  
+
+}
+main section#banner-slides article.slick-slider figure{
+    width: 100%;
+    height: 88vh;
+    margin: 0 ;
+    float: left;
+    position: relative;  
+
+}
+main section#banner-slides article.slick-slider figure#slide01{
+    background: url('../img/slides/slide-ilustracion-artistica.jpg') no-repeat top center;
+    background-size: cover;
+
+}
+main section#banner-slides article.slick-slider figure#slide02{
+    background: url('../img/slides/slide-ilustracion-de-personaje.jpeg') no-repeat top center;
+    background-size: cover;
+
+}
+main section#banner-slides article.slick-slider figure#slide03{
+    background: url('../img/slides/slide-ilustracion-retratista.jpg') no-repeat top center;
+    background-size: cover;
+
+}
+main section#banner-slides article.slick-slider h2{
+    padding: 100px 306px 26px 604px;
+    color: #fff;
+    font-size: 1.8em;
+
+}
+main section#banner-slides article.slick-slider a{
+    width: 115px;
+    height: 19px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E5165A;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 0;
+    transition: all 0.3s ease-in;
+
+}
+main section#banner-slides article.slick-slider a:hover{
+    color: #000;
+    transition: all 0.3s ease-in;
+
+}
+.slick-prev{
+    left: 30px!important;
+    z-index: 998;
+}
+.slick-next{
+    right: 30px!important;
+    z-index: 999;
+}
+/* seccion ilustraciones */
+main section#ilustraciones{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #FFFFFF;
+
+
+}
+main section#ilustraciones article{
+    width: 100%;
+    height: 543px;
+    margin: 0 auto;
+    float: none;
+    position: relative; 
+   
+
+}
+
+main section#ilustraciones article figure{
+    width: 360px;
+    height: 353px;
+    float: left;
+    position: relative;
+    padding: 180px 44px 0 44px;
+   
+}
+
+main section#ilustraciones article figure h2{
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    float: none;
+    font-size: 1.4em;
+    text-align: center;
+    background: rgb(163, 163, 163);
+    border-radius: 20px;
+
+}
+main section#ilustraciones article figure p{
+    font-size: 1em;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    
+
+}
+main section#ilustraciones article figure a{
+    width: 115px;
+    height: 19px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E5165A;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 0;
+    transition: all 0.3s ease-in;
+
+}
+main section#ilustraciones article figure a:hover{
+    color: #000;
+    transition: all 0.3s ease-in;
+}
+/* seccion about me */
+main section#about-me{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #EAE9E9;
+
+
+}
+main section#about-me article{
+    width: 1100px;
+    height: 592px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+
+}
+main section#about-me article figure{
+    width: 550px;
+    height: 592px;
+    float: left;
+    position: relative;
+    padding: 190px 0;
+    
+
+}
+
+main section#about-me article figure h2{
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    float: none;
+    font-size: 1.4em;
+    text-align: center;
+    background: rgb(163, 163, 163);
+    border-radius: 20px;
+
+}
+main section#about-me article figure p{
+    font-size: 1em;
+    text-align: center;
+    padding: 20px 0 20px 0;
+
+}
+main section#about-me article figure a{
+    width: 115px;
+    height: 19px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    background: #E5165A;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 0;
+    transition: all 0.3s ease-in;
+}
+main section#about-me article figure a:hover{
+    color: #000;
+    transition: all 0.3s ease-in;
+}
+/* Seccion de contacto */
+main section#contactame{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #FFFFFF;
+
+}
+main section#contactame article{
+    width: 1100px;
+    height: 600px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+   
+
+}
+
+/* componente footer */
+footer{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    float: none;
+    position: absolute;
+    background: #E5165A;  
+
+}
+footer article{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+
+}
+footer article figure{
+    width: 56px;
+    height: 50px;
+    display: block;
+    margin: 10px 190px 10px 0;
+    float: left;
+    position: relative;
+
+}
+footer article figure a{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+
+} 
+footer article figure a img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+
+}
+footer article figure a:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
+
+}
+footer article nav{
+    width: 134px;
+    height: 35px;
+    display: block;
+    margin: 22px 0;
+    float: right;
+    position: relative;
+
+}
+footer article nav a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 8px;
+    float: left;
+    position: relative;
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+    border-bottom: solid 4px #E5165A;
+
+} 
+footer article nav a:hover{
+    color: #333333;
+    transition: all 0.3s ease-in;
+
+}
