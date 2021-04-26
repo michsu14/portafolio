@@ -31,53 +31,56 @@ aside, header, main, footer, section, article, figure, nav, figcaption {
 
 /* componente aside menu responsive */
 aside#menu-responsive{
-    width: 100%;
+    width: 290px;
     height: 100%;
     margin: 0;
     float: none;
     position: fixed;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: -292px;
     z-index: 99998;
     background: #e5165aeb;
-    display: none;
+    display:none;
+    
     
 }
 aside#menu-responsive a#abrir{
     width: 35px;
-    height: 35px;
-    display: none;
+    height: auto;
     margin: 0;
+    display: block;
     float: none;
     position: absolute;
     top: 15px;
-    right: 56px;
+    left: -35px;
     z-index: 1;
     font-size: 1.25em;
     line-height: 1em;
     text-align: center;
     color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
     text-decoration: none;
     padding: 7.5px 0;
     letter-spacing: 0.03em;
     transition: all 0.3s ease-in;
+    
 
 }
 aside#menu-responsive a#abrir:hover{
-    color:#333333 ;
+    color:#E5165A ;
     transition: all 0.3s ease-in;
 
 
 }
 aside#menu-responsive a#cerrar{
     width: 35px;
-    height: 35px;
+    height: auto;
     display: none;
     margin: 0;
     float: none;
     position: absolute;
     top: 15px;
-    right: 56px;
+    left: -35px;
     z-index: 2;
     font-size: 1.25em;
     line-height: 1em;
@@ -90,28 +93,157 @@ aside#menu-responsive a#cerrar{
 
 }
 aside#menu-responsive a#cerrar:hover{
-    color:#333333 ;
+    color:#E5165A;
     transition: all 0.3s ease-in;
 
 }
 aside#menu-responsive nav#menu{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: 70px auto 0 auto;
+    float: none;
+    position: relative;
+
 
 }
 aside#menu-responsive nav#menu a{
+    width: 94%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float:none;
+    position: relative;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px;
+
 
 }
 aside#menu-responsive nav#menu a:hover{
+    color:#000;
+    transition: all 0.3s ease-in;
+}
+aside#menu-responsive a#MD-abrir{
+    width: 20px;
+    height: auto;
+    margin: 0;
+    display: none;
+    float: none;
+    position: absolute;
+    top: 136px;
+    right: 66px;
+    z-index: 1;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+
+}
+aside#menu-responsive a#MD-abrir:hover{
+    color:#000 ;
+    transition: all 0.3s ease-in;
+
+}
+aside#menu-responsive a#MD-cerrar{
+    width: 20px;
+    height: auto;
+    margin: 0;
+    display: none;
+    float: none;
+    position: absolute;
+    top: 22px;
+    left: 400px;
+    z-index: 1;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+
+}
+aside#menu-responsive a#MD-cerrar:hover{
+    color:#000 ;
+    transition: all 0.3s ease-in;
+
+}
+aside#menu-responsive nav#submenu{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: absolute;
+    top: 162px;
+    right: 69px;
+    display: none;
+    z-index: 9999;
+    background: #333;
+    padding: 10px 5px;
+
+}
+aside#menu-responsive nav#submenu a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+    
+
+}
+aside#menu-responsive nav#submenu a:hover{
+    color:#E5165A ;
+    background: #FFFFFF;
+    transition: all 0.3s ease-in;
 
 }
 aside#menu-responsive nav#redes-sociales{
+    width: 140px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
 
 } 
 aside#menu-responsive nav#redes-sociales a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 9px;
+    float: left;
+    position: relative;
+    font-size: 1.2em;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
 
 }
-aside#menu-responsive nav#redes-sociales{
-
-} a:hover{
+aside#menu-responsive nav#redes-sociales a:hover{
+    color: #000;
+    transition: all 0.3s ease-in;
 
 }
 
@@ -252,17 +384,95 @@ header article nav#menu a.activo{
     color: #FFFFFF;
     transition: all 0.3s ease-in;
     background-color: #E5165A;
-    border-radius: 5px;
+    border-radius: 10px 10px;
 
 }
-header article nav#menu nav#submenu{
+header article a#MD-abrir{
+    width: 20px;
+    height: auto;
+    margin: 0;
+    display: block;
+    float: none;
+    position: absolute;
+    top: 22px;
+    left: 400px;
+    z-index: 1;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+
+}
+header article a#MD-abrir:hover{
+    color:#E5165A ;
+    transition: all 0.3s ease-in;
+
+}
+header article a#MD-cerrar{
+    width: 20px;
+    height: auto;
+    margin: 0;
     display: none;
+    float: none;
+    position: absolute;
+    top: 22px;
+    left: 400px;
+    z-index: 1;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
 
 }
-header article nav#menu nav#submenu a{
+header article a#MD-cerrar:hover{
+    color:#E5165A ;
+    transition: all 0.3s ease-in;
 
 }
-header article nav#menu nav#submenu a:hover{
+header article nav#submenu{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: absolute;
+    top: -110px;
+    left: 284px;
+    display: block;
+    background: #333;
+    padding: 10px 5px;
+
+}
+header article nav#submenu a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+    
+
+}
+header article nav#submenu a:hover{
+    color:#E5165A ;
+    background: #FFFFFF;
+    transition: all 0.3s ease-in;
 
 }
 header article nav#redes-sociales{
@@ -306,6 +516,7 @@ main{
     position: relative;
 
 }
+/* seccion slides */
 main section#banner-slides{
     width: 100%;
     height: auto;
@@ -421,7 +632,7 @@ main section#ilustraciones article figure h2{
     font-size: 1.4em;
     text-align: center;
     background: rgb(163, 163, 163);
-    border-radius: 20px;
+    border-radius:  5px 5px;
 
 }
 main section#ilustraciones article figure p{
@@ -474,10 +685,10 @@ main section#about-me article{
 }
 main section#about-me article figure{
     width: 550px;
-    height: 592px;
+    height: 402px;
     float: left;
     position: relative;
-    padding: 190px 0;
+    padding: 190px 0 0 0;
     
 
 }
@@ -490,7 +701,7 @@ main section#about-me article figure h2{
     font-size: 1.4em;
     text-align: center;
     background: rgb(163, 163, 163);
-    border-radius: 20px;
+    border-radius: 5px 5px;
 
 }
 main section#about-me article figure p{
@@ -530,13 +741,49 @@ main section#contactame{
 
 }
 main section#contactame article{
-    width: 1100px;
-    height: 600px;
+    width: 80%;
+    height: auto;
     margin: 0 auto;
     float: none;
     position: relative;
+    padding: 90px 0;
    
-
+}
+main section#contactame article p{
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.2em;
+    padding: 0 0 25px;
+}
+main section#contactame article nav{
+    width: 290px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+main section#contactame article nav a{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    float: none;
+    position: relative;
+    border: solid 1px #333333;
+    text-align: center;
+    text-decoration: none;
+    color:#FFFFFF;
+    background: #E5165A;
+    line-height: 2em;
+    border-radius: 5px 5px ;
+    transition: all 0.3s ease-in;
+}
+main section#contactame article nav a:hover{
+    background:#333333 ;
+    color: #E5165A;
+    border: solid 1px #E5165A;
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
 }
 
 /* componente footer */
@@ -551,7 +798,7 @@ footer{
 }
 footer article{
     width: 80%;
-    height: 80px;
+    height: auto;
     margin: 0 auto;
     float: none;
     position: relative;
@@ -621,4 +868,118 @@ footer article nav a:hover{
     color: #333333;
     transition: all 0.3s ease-in;
 
+}
+
+
+@media only screen and (max-width: 1199px){
+    aside#menu-responsive{
+        display: block;
+    }
+    header article nav#menu{
+        display: none;
+    
+    }
+    header article nav#redes-sociales{
+        display: none;
+    
+    }
+    header article a#MD-abrir{
+        display: none;
+    
+    }
+    main section#banner-slides article.slick-slider h2{
+        padding: 100px 272px 26px 530px;
+  
+    }
+    main section#ilustraciones article figure{
+        padding: 180px 16px 0 16px;
+       
+    }
+
+}
+
+@media only screen and (max-width: 1060px){
+    main section#banner-slides article.slick-slider h2{
+        padding: 100px 156px 26px 350px;
+  
+    }
+
+    main section#ilustraciones article{
+        width: 80%;
+        height: 680px;
+    }
+    main section#ilustraciones article figure{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        float: none;
+        padding: 62px 44px 0 44px;
+       
+    }
+    main section#about-me article{
+        width:80%;
+        height: 452px;
+    }
+    main section#about-me article figure{
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+        float: none;
+        padding: 62px 44px 0 44px;
+    }
+
+}
+@media only screen and (max-width: 899px){
+    main section#banner-slides article.slick-slider h2{
+        padding: 208px 153px 26px 270px;
+  
+    }
+
+}
+@media only screen and (max-width: 690px){
+    main section#banner-slides article.slick-slider h2{
+        padding: 208px 210px 26px 224px;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width: 590px){
+    main section#banner-slides article.slick-slider figure#slide01{
+        background: url('../img/slides/slide-ilustracion-artistica-mobile.jpg') no-repeat top center;
+        background-size: cover;
+    }
+    main section#banner-slides article.slick-slider figure#slide02{
+        background: url('../img/slides/slide-ilustracion-de-personaje-mobile.jpg') no-repeat top center;
+        background-size: cover;
+    }
+    main section#banner-slides article.slick-slider figure#slide03{
+        background: url('../img/slides/slide-ilustracion-retratista-mobile.jpg') no-repeat top center;
+        background-size: cover;
+    }
+    main section#banner-slides article.slick-slider h2{
+        padding: 208px 156px 26px 169px;
+        text-align: center;
+    }
+
+    main section#ilustraciones article figure{
+        padding: 62px 13px 0 13px; 
+    }
+
+    main section#about-me article figure{
+        padding: 62px 0 0;
+    }
+}
+@media only screen and (max-width: 499px){
+    main section#banner-slides article.slick-slider h2{
+        padding: 208px 156px 26px 169px;
+        text-align: center;
+    }
+
+    main section#ilustraciones article figure{
+        padding: 62px 13px 0 13px;  
+    }
+
+    main section#about-me article figure{
+        padding: 62px 0 0;
+    }
 }
