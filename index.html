@@ -43,8 +43,14 @@
                 <a href="#ilustraciones">Ilustración</a>
                 <a href="perfil.html">Perfil</a>
                 <a href="portafolio.html">Portafolio</a>
-                <a href="#contactame">Contáctame</a>
+                <a href="#contactame" id="a-contacto-movil">Contáctame</a>
             </nav>
+            <a href="#" id="MD-abrir">
+                <i class="fas fa-angle-down"></i>
+            </a>
+            <a href="#" id="MD-cerrar">
+                <i class="fas fa-angle-up"></i>
+            </a>
             <nav id="submenu">
                 <a href="ilustracion_artistica.html">Ilustración artistica</a>
                 <a href="ilustracion_de_personaje.html">Ilustración de personaje</a>
@@ -89,15 +95,21 @@
                 </figure>
                 <nav id="menu">
                     <a href="index.html" class="activo">Inicio</a>
-                    <a href="#ilustraciones">Ilustración<i class="fas fa-angle-down"></i></a>
-                      <nav id="submenu">
-                          <a href="ilustracion_artistica.html">Ilustración artistica</a>
-                          <a href="ilustracion_de_personaje.html">Ilustración de personaje</a>
-                          <a href="ilustracion_retratista.html">Ilustración retratista</a>
-                      </nav>
+                    <a href="#ilustraciones">Ilustración</a>
                     <a href="perfil.html">Perfil</a>
                     <a href="portafolio.html">Portafolio</a>
-                    <a href="#contactame">Contáctame</a>
+                    <a href="#contactame" id="a-contacto">Contáctame</a>
+                </nav>
+                <a href="#" id="MD-abrir">
+                    <i class="fas fa-angle-down"></i>
+                </a>
+                <a href="#" id="MD-cerrar">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+                <nav id="submenu">
+                    <a href="ilustracion_artistica.html">Ilustración artistica</a>
+                    <a href="ilustracion_de_personaje.html">Ilustración de personaje</a>
+                    <a href="ilustracion_retratista.html">Ilustración retratista</a>
                 </nav>
                 <nav id="redes-sociales">
                     <a href="https://www.facebook.com/michellemaria.suarezbravo/" target="_blank">
@@ -117,7 +129,6 @@
                     </a>
                 </nav>
             </article>
-
         </header>
  
         <!-- caja main -->
@@ -140,7 +151,6 @@
                         <a href="ilustracion_retratista.html">VER MÁS</a>
                     </figure>
                 </article>
-
             </section>
             <section id="ilustraciones">
 
@@ -164,7 +174,6 @@
                         <a href="ilustracion_artistica.html">VER MÁS</a>
                     </figure>
                 </article>
-
             </section>
             
             <section id="about-me">
@@ -183,15 +192,18 @@
                     <a href="perfil.html">VER MÁS</a>
                   </figure>
                 </article>
-
             </section>
            
           <!-- Seccion de contacto -->
           <section id="contactame">
               <article>
-                  
+                  <p>Si quieres contactarme, puedes hacerlo atraves de los siguientes medios</p>
+                  <nav>
+                      <a href="https://wa.me/573014585557" target="_blank">Chatea conmigo</a>
+                      <a href="tel:+573014585557">Llamame</a>
+                      <a href="mailto:michsuarez1413@gmail.com">Mandame un E-mail</a>
+                  </nav>
               </article>
-
           </section>
         </main>
 
@@ -221,7 +233,6 @@
                         </i>
                     </a>
                 </nav>
-                
             </article>
         </footer>
         
@@ -237,25 +248,23 @@
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 
-         <!-- script slider  -->
-         <script>
-                $(document).ready(function(){
-                   $('.slick-slider').slick({
-                       autoplay:true,
-                       slideToShow:1,
-                       slideToScroll:1,
-                       autoplaySpeed: 2000,
-                       speed: 350,
-                       infinite:true,
-                       fade:true,
-                       arrows:true,
-                   });
-               });
-         </script>
-
-
          <!-- llamado a java script propio  -->
          <script src="js/script.js"></script>
-        
+         
+                  <!-- script slider  -->
+                  <script>
+                    $(document).ready(function(){
+                       $('.slick-slider').slick({
+                           autoplay:true,
+                           slideToShow:1,
+                           slideToScroll:1,
+                           autoplaySpeed: 2000,
+                           speed: 350,
+                           infinite:true,
+                           fade:true,
+                           arrows:true,
+                       });
+                   });
+             </script>
     </body>
 </html>
