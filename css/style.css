@@ -387,7 +387,88 @@ header article nav#menu a.activo{
     border-radius: 10px 10px;
 
 }
+header article a#MD-abrir{
+    width: 20px;
+    height: auto;
+    margin: 0;
+    display: block;
+    float: none;
+    position: absolute;
+    top: 22px;
+    left: 400px;
+    z-index: 1;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
 
+}
+header article a#MD-abrir:hover{
+    color:#E5165A ;
+    transition: all 0.3s ease-in;
+
+}
+header article a#MD-cerrar{
+    width: 20px;
+    height: auto;
+    margin: 0;
+    display: none;
+    float: none;
+    position: absolute;
+    top: 22px;
+    left: 400px;
+    z-index: 1;
+    font-size: 1.25em;
+    line-height: 1em;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px 0 0 3px;
+    text-decoration: none;
+    padding: 7.5px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+
+}
+header article a#MD-cerrar:hover{
+    color:#E5165A ;
+    transition: all 0.3s ease-in;
+
+}
+header article nav#submenu{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: absolute;
+    top: -110px;
+    left: 284px;
+    display: none;
+    background: #333;
+    padding: 10px 5px;
+
+}
+header article nav#submenu a{
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 0;
+    letter-spacing: 0.03em;
+    transition: all 0.3s ease-in;
+    
+
+}
 header article nav#submenu a:hover{
     color:#E5165A ;
     background: #FFFFFF;
@@ -704,7 +785,351 @@ main section#contactame article nav a:hover{
     transform: scale(1.03);
     transition: all 0.3s ease-in;
 }
+/* ilustracion artistica */
+main section#artistica-galeria{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #EAE9E9;
+}
+main section#artistica-galeria article{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
 
+}
+main section#artistica-galeria article h2{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 15px 0;
+
+}
+main section#artistica-galeria article p{
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 0 50px ;
+
+}
+main section#artistica-galeria article nav{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+
+}
+main section#artistica-galeria article nav div.columna-pi {
+    width: 250px;
+    height: auto;
+    margin: 0 11px ;
+    float: none;
+    display: inline-block;
+    position: relative;
+
+
+}
+main section#artistica-galeria article nav div.columna-pi a{
+    width: 250px;
+    height: auto;
+    margin: 11px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+
+}
+main section#artistica-galeria article nav div.columna-pi a:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
+
+}
+main section#artistica-galeria article nav div.columna-pi a img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+   
+}
+
+/* ilustracion de pesonaje */
+main section#personaje-galeria{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #EAE9E9;
+
+}
+main section#personaje-galeria article{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+
+}
+main section#personaje-galeria article h2{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 15px 0;
+
+}
+main section#personaje-galeria article p{
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 0 50px ;
+
+}
+main section#personaje-galeria article nav{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+
+}
+main section#personaje-galeria article nav div.columna-pi {
+    width: 250px;
+    height: auto;
+    margin: 0 11px ;
+    float: none;
+    display: inline-block;
+    position: relative;
+
+
+}
+main section#personaje-galeria article nav div.columna-pi a{
+    width: 250px;
+    height: auto;
+    margin: 11px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+
+}
+main section#personaje-galeria article nav div.columna-pi a:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
+
+}
+main section#personaje-galeria article nav div.columna-pi a img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+   
+}
+
+/* ilustracion retratista */
+main section#retratista-galeria{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #EAE9E9;
+
+}
+main section#retratista-galeria article{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+
+
+}
+main section#retratista-galeria article h2{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 15px 0;
+
+
+}
+main section#retratista-galeria article p{
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 0 50px ;
+    
+
+}
+main section#retratista-galeria article nav{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    
+
+}
+main section#retratista-galeria article nav div.columna-pi {
+    width: 250px;
+    height: auto;
+    margin: 0 11px ;
+    float: none;
+    display: inline-block;
+    position: relative;
+    
+
+
+}
+main section#retratista-galeria article nav div.columna-pi a{
+    width: 250px;
+    height: auto;
+    margin: 11px;
+    float: none;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+
+}
+main section#retratista-galeria article nav div.columna-pi a:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
+
+}
+main section#retratista-galeria article nav div.columna-pi a img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+   
+}
+
+/* perfil */
+main section#perfil{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #EAE9E9;
+}
+main section#perfil article#imagen{
+    width: auto;
+    height: auto;
+    margin: 0 auto 100px;
+    float: none;
+  
+}
+main section#perfil article#imagen figure{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    float: none;
+
+}
+main section#perfil article#imagen figure img{
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    float: none;
+    border-radius: 20px;
+
+}
+main section#perfil article#informacion{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+
+}
+main section#perfil article#informacion h2{
+    font-size: 1.4em;
+    text-align: center;
+    padding: 15px 0;
+
+}
+main section#perfil article#informacion p{
+    font-size: 1em;
+    text-align: center;
+    padding: 5px 0 50px ;
+    
+
+}
+/* portafolio */
+main section#portafolio-texto{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #EAE9E9;
+}
+main section#portafolio-texto article{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+
+}
+main section#portafolio-texto article p{
+    font-size: 1em;
+    text-align: center;
+    padding: 50px 0 50px ;
+
+}
+main section#galeria{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+    position: relative;
+    background: #EAE9E9;
+
+}
+main section#galeria figure{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    float: none;
+
+}
+main section#galeria figure nav{
+    width: auto;
+    height: auto;
+    margin: 0 auto ;
+    float: none;
+    padding: 10px;
+    text-align: center;
+
+}
+main section#galeria figure nav a{
+
+    transition: all 0.3s ease-in;
+
+}
+main section#galeria figure nav a:hover{
+    transform: scale(1.03);
+    transition: all 0.3s ease-in;
+
+}
+main section#galeria figure nav a img{
+    border-radius: 20px;
+
+}
+
+.fancybox-container{
+    z-index: 99999 !important;
+}
 /* componente footer */
 footer{
     width: 100%;
